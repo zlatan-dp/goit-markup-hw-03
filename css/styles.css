@@ -80,6 +80,8 @@ img {
 
 .header {
   border-bottom: #ececec solid 1px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .header-nav {
@@ -114,8 +116,6 @@ img {
 
   display: block;
   margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 
 .logo-accent {
@@ -241,10 +241,15 @@ img {
 .work-item + .work-item {
   margin-left: var(--main-margin);
 }
+
 /* Секция нашей команды */
 
 .team {
   background-color: #f5f4fa;
+}
+
+.team-list {
+  display: flex;
 }
 
 .team-title {
@@ -252,10 +257,25 @@ img {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+
+  margin-bottom: var(--second-margin);
 }
 
 .team-item {
   background-color: var(--white-color);
+  padding-bottom: var(--main-margin);
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-item + .team-item {
+  margin-left: var(--main-margin);
+}
+
+.team-item > img {
+  margin-bottom: var(--main-margin);
 }
 
 .team-names {
@@ -264,6 +284,7 @@ img {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 
 .team-function {
@@ -316,6 +337,8 @@ img {
 
 .footer {
   background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo {
@@ -325,6 +348,12 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--white-color);
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .footer-item-adress {
