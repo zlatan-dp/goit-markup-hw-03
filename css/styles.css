@@ -33,8 +33,8 @@ ol {
 
 img {
   display: block;
-  /* width: 100%;
-  height: auto; */
+  width: 100%;
+  height: auto;
 }
 
 .link {
@@ -338,7 +338,7 @@ img {
 }
 
 .portfolio-examples-item {
-  flex-basis: calc(100% / 3 - 90px);
+  flex-basis: calc(100% / 3 - 30px);
   margin-left: var(--main-margin);
   margin-bottom: var(--main-margin);
 }
